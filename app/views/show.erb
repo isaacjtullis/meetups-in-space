@@ -1,0 +1,27 @@
+<div class="showpage">
+  <ul>
+    <li><%= "#{@meetup.name}"%></li>
+    <li><%="#{@meetup.description}"%></li>
+    <li><%="#{@meetup.location}"%> </li>
+  </ul>
+
+  <% if @users != nil %>
+    <h3>MEMBERS:</h3>
+      <% @users.each do |name| %>
+        <ul>
+          <li><%= name.username %></li>
+        </ul>
+      <% end %>
+  <% end %>
+
+  <% if @login != nil %>
+    <p>ERROR: <%= @login %>
+  <% end %>
+</div>
+
+<form action="/meetups/<%= @meetup.id %>/members" method="post">
+  <input type="hidden" name="meetup[id]" value="<%= @meetup.id %>">
+  <input type="submit" value="JOIN!">
+</form>
+
+<h3><a href="/meetups">Back</a></h3>

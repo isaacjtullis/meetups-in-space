@@ -1,0 +1,72 @@
+#keep open
+body {
+  background-image: url('/images/stardust.png');
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+.link a {
+ background-color: #555555;
+ border-radius: 10px;
+ border: none;
+ color: #e7e7e7;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 20px;
+ margin-top: 20px;
+
+}
+
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  color: white;
+}
+
+.top-bar {
+  background-color: #3C3C3C;
+}
+
+.top-bar-section {
+  display: inline-block;
+  float: right;
+}
+
+.top-bar-section li {
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.logo {
+  display: inline-block;
+  margin: 1em 0;
+}
+
+.flash {
+  padding: 1em;
+  background-color: #3B9089;
+}
+
+.join {
+  background-color: #555555;
+  border-radius: 10px;
+  border: none;
+  color: #e7e7e7;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.showpage {
+  margin-top: 20px;
+  color: black;
+}
